@@ -144,6 +144,7 @@ MonoBehaviour:
   executionType: 1
   editingName: 0
   useStrafeMovement: 0
+  updateRotationInStrafe: 0
   speed: 2
 --- !u!114 &11400000
 MonoBehaviour:
@@ -239,6 +240,8 @@ MonoBehaviour:
   editingName: 0
   debugMode: 0
   patrolSpeed: 1
+  patrolInStrafe: 0
+  updateRotationInStrafe: 1
 --- !u!114 &114194159120130302
 MonoBehaviour:
   m_ObjectHideFlags: 1

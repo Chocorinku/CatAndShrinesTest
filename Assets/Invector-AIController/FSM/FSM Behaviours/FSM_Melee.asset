@@ -169,6 +169,7 @@ MonoBehaviour:
   executionType: 1
   editingName: 0
   useStrafeMovement: 0
+  updateRotationInStrafe: 0
   speed: 2
 --- !u!114 &-1447553757549190890
 MonoBehaviour:
@@ -412,6 +413,8 @@ MonoBehaviour:
   editingName: 0
   debugMode: 0
   patrolSpeed: 1
+  patrolInStrafe: 0
+  updateRotationInStrafe: 1
 --- !u!114 &114084689365868400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -721,6 +724,7 @@ MonoBehaviour:
   executionType: 1
   editingName: 0
   useStrafeMovement: 0
+  updateRotationInStrafe: 0
   speed: 1
 --- !u!114 &114520122446804074
 MonoBehaviour:
@@ -1297,6 +1301,9 @@ MonoBehaviour:
   executionType: -1
   editingName: 0
   forceCanAttack: 0
+  aimLayer: 4
+  onlyShotWhenInAngle: 0
+  debug: 0
 --- !u!114 &114826296505391304
 MonoBehaviour:
   m_ObjectHideFlags: 1
