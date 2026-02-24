@@ -4789,6 +4789,39 @@ MonoBehaviour:
   listenerPower: 1
   debugMode: 0
   ignoreNoiseType: []
+--- !u!114 &207205693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207205685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605ff11ee57b0c241a82c0c37c40c0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openCloseEvents: 0
+  openCloseWindow: 1
+  selectedToolbar: 0
+  messagesListeners:
+  - Name: TriggerDuckAnimation
+    receiveFromGlobal: 0
+    onReceiveMessage:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 763733606}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: PlayInFixedTime
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Invector_#11_Start@DuckingTest
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &207205694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22608,6 +22641,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31d571e165dd37a42b60aacb456c2216, type: 3}
+--- !u!95 &763733606 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 31d571e165dd37a42b60aacb456c2216, type: 3}
+  m_PrefabInstance: {fileID: 763733605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &765227751
 GameObject:
   m_ObjectHideFlags: 0
@@ -23224,7 +23262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &784952189
 MonoBehaviour:
   m_ObjectHideFlags: 0
