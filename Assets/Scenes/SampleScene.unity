@@ -4803,7 +4803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 1
+  openCloseWindow: 0
   selectedToolbar: 0
   listenerPower: 1
   debugMode: 0
@@ -66066,13 +66066,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 0
+  openCloseWindow: 1
   selectedToolbar: 0
   _isDead: 0
   _currentHealth: 0
   isImmortal: 0
   fillHealthOnStart: 1
-  maxHealth: 100
+  maxHealth: 20
   healthRecovery: 0
   healthRecoveryDelay: 0
   currentHealthRecoveryDelay: 0
@@ -66179,7 +66179,7 @@ MonoBehaviour:
   _walkingStopingDistance: 0
   _runningStopingDistance: 0.1
   _sprintingStopingDistance: 0.15
-  _waypointArea: {fileID: 0}
+  _waypointArea: {fileID: 694732075}
   _changeWaypointDistance: 0
   _invertWaypointsOrder: 0
   _randomStartingPoint: 1
@@ -66333,6 +66333,14 @@ PrefabInstance:
     - target: {fileID: 1163117783388240629, guid: 68d8f3eae01c5744b996aab3358db0a0, type: 3}
       propertyPath: m_Name
       value: Cactus
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163117783388240629, guid: 68d8f3eae01c5744b996aab3358db0a0, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163117783388240629, guid: 68d8f3eae01c5744b996aab3358db0a0, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1163117783388268181, guid: 68d8f3eae01c5744b996aab3358db0a0, type: 3}
       propertyPath: m_RootOrder
