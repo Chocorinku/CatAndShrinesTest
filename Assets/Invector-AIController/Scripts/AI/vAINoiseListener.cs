@@ -37,11 +37,19 @@ namespace Invector.vCharacterController.AI
             vAINoiseManager.Instance.RemoveListener(this);
         }
 
+        private static bool isQuitting = false;
+        void OnApplicationQuit() {
+
+            isQuitting = true;
+
+        }
+
         protected virtual void OnDestroy()
         {
             try
             {
-                vAINoiseManager.Instance.RemoveListener(this);
+                if (!isQuitting)
+                    vAINoiseManager.Instance.RemoveListener(this);
             }
             catch { }
         }
