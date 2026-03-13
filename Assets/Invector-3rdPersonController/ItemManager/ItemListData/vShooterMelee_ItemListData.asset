@@ -717,7 +717,7 @@ MonoBehaviour:
   DisableAnim: LowBack
   enableDelayTime: 0.5
   disableDelayTime: 0.5
-  customHandler: 
+  customHandler: PistolHandler
   twoHandWeapon: 1
   onDestroy:
     m_PersistentCalls:

@@ -3359,6 +3359,36 @@ RectTransform:
   m_AnchoredPosition: {x: 29.7, y: -0.6}
   m_SizeDelta: {x: 30.8, y: 17.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &129498402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129498403}
+  m_Layer: 0
+  m_Name: PistolHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129498403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129498402}
+  m_LocalRotation: {x: -0.51165396, y: 0.47023845, z: 0.56036705, w: 0.45063823}
+  m_LocalPosition: {x: -2.05, y: 7.53, z: 4.44}
+  m_LocalScale: {x: 99.999954, y: 100.00003, z: 99.99997}
+  m_Children: []
+  m_Father: {fileID: 1348032009}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: -81.172, y: -77.134, z: 171.061}
 --- !u!1 &133865597
 GameObject:
   m_ObjectHideFlags: 0
@@ -36579,6 +36609,7 @@ MonoBehaviour:
       - {fileID: 1549269283}
       - {fileID: 2033057365}
       - {fileID: 1417869797}
+      - {fileID: 129498403}
     onInstantiateEquiment:
       m_PersistentCalls:
         m_Calls:
@@ -37247,7 +37278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openCloseEvents: 0
   openCloseWindow: 1
-  selectedToolbar: 0
+  selectedToolbar: 4
   canUseMeleeBlock_H: 0
   canUseMeleeWeakAttack_H: 1
   canUseMeleeStrongAttack_H: 1
@@ -37317,7 +37348,7 @@ MonoBehaviour:
   applyRecoilToCamera: 1
   useLeftIK: 1
   useRightIK: 1
-  weaponIKAdjustList: {fileID: 0}
+  weaponIKAdjustList: {fileID: 11400000, guid: 1bf267d56f8d443489a4cdb0d538b443, type: 2}
   ikAdjustSmooth: 20
   allAmmoInfinity: 0
   useAmmoDisplay: 1
