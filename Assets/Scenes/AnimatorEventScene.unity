@@ -3485,7 +3485,7 @@ MonoBehaviour:
     timeButtonWasPressed: 0
     lastTimeTheButtonWasPressed: 0
     inButtomTimer: 0
-  animationClip: 
+  animationClip: MagicAttack
   animationEnd: 0.8
   OnPlayAnimation:
     m_PersistentCalls:
