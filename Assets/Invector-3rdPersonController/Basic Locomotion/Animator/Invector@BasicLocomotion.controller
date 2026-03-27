@@ -337,7 +337,7 @@ MonoBehaviour:
     normalizedTime: 0.31
   - eventName: StopFireEffect
     eventTriggerType: 0
-    normalizedTime: 0.77
+    normalizedTime: 0.62
 --- !u!1109 &-4791003813267487564
 AnimatorTransition:
   m_ObjectHideFlags: 1
