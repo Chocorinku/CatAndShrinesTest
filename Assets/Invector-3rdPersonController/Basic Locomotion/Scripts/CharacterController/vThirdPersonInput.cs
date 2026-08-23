@@ -576,6 +576,13 @@ namespace Invector.vCharacterController
             }
         }
 
+        /// <summary>
+        /// 編集加えたところ        
+        private float moveTimer;
+        public float thresholdTime = 5.5f;  // 何秒移動したら発動するか
+        public bool SaidLocktrigger;
+        /// </summary>
+
         public virtual void UpdateCameraStates()
         {
             // CAMERA STATE - you can change the CameraState here, the bool means if you want lerp of not, make sure to use the same CameraState String that you named on TPCameraListData
@@ -611,10 +618,38 @@ namespace Invector.vCharacterController
             {
                 tpCamera.ChangeState("Strafing", true);
             }
+            else if (cc.isSprinting) 
+            {
+                tpCamera.ChangeState("Sprint", true);
+            }
             else
             {
-                tpCamera.ChangeState("Default", true);
+                //tpCamera.ChangeState("Default", true);
+
+                /// <summary>
+                /// 編集加えたところ   
+                // 横方向の入力（A/Dキーなど）があるかチェック
+                if (Mathf.Abs(cc.input.x) > 0.1f) {
+                    moveTimer += Time.deltaTime;
+                } else {
+                    moveTimer = 0;
+                }
+                // 一定時間以上移動したら、入力方向にオフセットを計算
+                if ((moveTimer >= thresholdTime) && !tpCamera.SaidLockTrigger) {
+
+                    if (cc.input.x > 0) {
+                        tpCamera.ChangeState("RMoveCamerPan", true);
+                    } else if (cc.input.x < 0) {
+                        tpCamera.ChangeState("LMoveCamerPan", true);
+                    }
+
+                } else if (!tpCamera.SaidLockTrigger) {
+                    tpCamera.ChangeState("Default", true);
+                }
+                /// </summary>
+
             }
+
         }
 
         public virtual void ChangeCameraState(string cameraState, bool useLerp = true)

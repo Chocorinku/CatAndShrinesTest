@@ -275,6 +275,7 @@ namespace Invector.vCharacterController
 
         // action bools
         internal bool
+            isCat,
             isRolling,
             isJumping,
             isInAirborne,
@@ -1416,7 +1417,7 @@ namespace Invector.vCharacterController
 
         public virtual void ControlCapsuleHeight()
         {
-            if (isCrouching || isRolling)
+            if (isCrouching || isRolling || isCat)
             {
                 _capsuleCollider.center = colliderCenter / crouchHeightReduction;
                 _capsuleCollider.height = colliderHeight / crouchHeightReduction;
@@ -1546,6 +1547,9 @@ namespace Invector.vCharacterController
                     "Lock Rotation = " + BoolToRichText(lockAnimRotation) + "\n" +
                     "Lock AnimRot = " + BoolToRichText(lockAnimRotation) + "\n" +
                     "--- Actions Bools ---" + "\n" +
+
+                    "Is Cat = " + BoolToRichText(isCat) + "\n" +
+
                     "Is Sliding = " + BoolToRichText(isSliding) + "\n" +
                     "Is Sprinting = " + BoolToRichText(isSprinting) + "\n" +
                     "Is Crouching = " + BoolToRichText(isCrouching) + "\n" +

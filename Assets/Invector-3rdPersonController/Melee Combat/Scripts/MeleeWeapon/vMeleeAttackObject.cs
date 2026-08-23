@@ -197,6 +197,8 @@ namespace Invector.vMelee
         public Vector3 hitPoint;
         public Collider targetCollider;
         public bool targetIsBlocking;
+        internal object hitTarget;
+
         public vHitInfo(vMeleeAttackObject attackObject, vHitBox hitBox, Collider targetCollider, Vector3 hitPoint)
         {
             this.attackObject = attackObject;

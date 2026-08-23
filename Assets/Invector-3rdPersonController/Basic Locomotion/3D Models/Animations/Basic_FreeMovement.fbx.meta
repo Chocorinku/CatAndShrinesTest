@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 37c6cfe59f56e8a4799011397a870a8b
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 20300
   internalIDToNameTable:
   - first:
       1: 100000
@@ -1054,7 +1054,7 @@ ModelImporter:
       takeName: RunTurnLeft
       internalID: 0
       firstFrame: 0
-      lastFrame: 19.000002
+      lastFrame: 19
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1328,6 +1328,7 @@ ModelImporter:
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
@@ -1337,6 +1338,9 @@ ModelImporter:
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -1857,8 +1861,7 @@ ModelImporter:
     - name: VBOT_:LeftHandThumb4
       parentName: 
       position: {x: 0.12360834, y: 3.4833553, z: -0.0000096559515}
-      rotation: {x: 0.000000011175872, y: 0.000000011175872, z: 0.000000056810677,
-        w: 1}
+      rotation: {x: 0.000000011175872, y: 0.000000011175872, z: 0.000000056810677, w: 1}
       scale: {x: 1, y: 1, z: 0.99999994}
     - name: VBOT_:LeftHandThumb4_end
       parentName: 
@@ -1933,8 +1936,7 @@ ModelImporter:
     - name: VBOT_:LeftHandRing4
       parentName: 
       position: {x: -0.00041358636, y: 2.9665046, z: 0.000024707986}
-      rotation: {x: 0.00000003154195, y: 0.0000000055908194, z: 0.0000000044438986,
-        w: 1}
+      rotation: {x: 0.00000003154195, y: 0.0000000055908194, z: 0.0000000044438986, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: VBOT_:LeftHandRing4_end
       parentName: 
@@ -2004,8 +2006,7 @@ ModelImporter:
     - name: VBOT_:RightHandThumb4
       parentName: 
       position: {x: -0.18034028, y: 3.4578032, z: -0.00000989437}
-      rotation: {x: -0.000000001862645, y: -0.0000000037252899, z: 0.000000028870998,
-        w: 1}
+      rotation: {x: -0.000000001862645, y: -0.0000000037252899, z: 0.000000028870998, w: 1}
       scale: {x: 1.0000001, y: 1, z: 1}
     - name: VBOT_:RightHandThumb4_end
       parentName: 
@@ -2080,8 +2081,7 @@ ModelImporter:
     - name: VBOT_:RightHandRing4
       parentName: 
       position: {x: -0.000018931923, y: 3.1309967, z: -0.000009484588}
-      rotation: {x: -0.000000040627246, y: -0.000000007421774, z: 0.0000000014611032,
-        w: 1}
+      rotation: {x: -0.000000040627246, y: -0.000000007421774, z: 0.0000000014611032, w: 1}
       scale: {x: 1, y: 1, z: 0.99999994}
     - name: VBOT_:RightHandRing4_end
       parentName: 
@@ -2106,8 +2106,7 @@ ModelImporter:
     - name: VBOT_:RightHandPinky4
       parentName: 
       position: {x: -0.00018684844, y: 2.5621476, z: 0.0000047087665}
-      rotation: {x: 0.00000000583043, y: -0.0000000037147578, z: 0.000000024821702,
-        w: 1}
+      rotation: {x: 0.00000000583043, y: -0.0000000037147578, z: 0.000000024821702, w: 1}
       scale: {x: 1, y: 1, z: 0.99999994}
     - name: VBOT_:RightHandPinky4_end
       parentName: 
@@ -2206,12 +2205,13 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 340f99b8334a14c4a8a01dce6e1e5348,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 340f99b8334a14c4a8a01dce6e1e5348, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

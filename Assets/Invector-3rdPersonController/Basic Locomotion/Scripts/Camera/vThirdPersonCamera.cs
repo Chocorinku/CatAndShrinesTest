@@ -124,6 +124,14 @@ namespace Invector.vCamera
 
         protected Vector3 lastLookAtPosition, lastLookAtForward;
         public bool isFreezed;
+
+        /// <summary>
+        /// 編集加えたところ
+        public bool SaidLockTrigger;    //Trigger用オブに触れたかの判定
+        // </summary>
+
+
+
         protected Transform targetLookAt
         {
             get
@@ -917,6 +925,8 @@ namespace Invector.vCamera
                 return (currentState.lookPoints != null && currentState.cameraMode.Equals(TPCameraMode.FixedPoint) && (indexLookPoint < currentState.lookPoints.Count || currentState.lookPoints.Count > 0));
             }
         }
+
+        
 
         protected virtual bool CullingRayCast(Vector3 from, ClipPlanePoints _to, out RaycastHit hitInfo, float distance, LayerMask cullingLayer, Color color)
         {
